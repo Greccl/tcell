@@ -39,6 +39,16 @@ var StyleDefault Style
 // styleInvalid is just an arbitrary invalid style used internally.
 var styleInvalid = Style{attrs: AttrInvalid}
 
+// Getters for foreground and background colors
+func (s *Style) GetForeground() Color {
+	return s.fg
+}
+
+func (s *Style) GetBackground() Color {
+	return s.bg
+}
+
+
 // Foreground returns a new style based on s, with the foreground color set
 // as requested.  ColorDefault can be used to select the global default.
 func (s Style) Foreground(c Color) Style {

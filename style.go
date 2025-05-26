@@ -48,6 +48,14 @@ func (s *Style) GetBackground() Color {
 	return s.bg
 }
 
+func (s *Style) SetForegroundRGB(r, g, b int32) {
+	s.fg = NewRGBColor(r, g, b)
+}
+
+func (s *Style) SetBackground(r, g, b int32) {
+	s.bg = NewRGBColor(r, g, b)
+}
+
 
 // Foreground returns a new style based on s, with the foreground color set
 // as requested.  ColorDefault can be used to select the global default.

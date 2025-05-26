@@ -52,7 +52,7 @@ func (s *Style) SetForegroundRGB(r, g, b int32) {
 	s.fg = NewRGBColor(r, g, b)
 }
 
-func (s *Style) SetBackground(r, g, b int32) {
+func (s *Style) SetBackgroundRGB(r, g, b int32) {
 	s.bg = NewRGBColor(r, g, b)
 }
 

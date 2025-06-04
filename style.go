@@ -48,6 +48,14 @@ func (s *Style) GetBackground() Color {
 	return s.bg
 }
 
+func (s *Style) SetForeground(c Color) {
+	s.fg = c
+}
+
+func (s *Style) SetBackground(c Color) {
+	s.bg = c
+}
+
 func (s *Style) SetForegroundRGB(r, g, b int32) {
 	s.fg = NewRGBColor(r, g, b)
 }
@@ -55,6 +63,8 @@ func (s *Style) SetForegroundRGB(r, g, b int32) {
 func (s *Style) SetBackgroundRGB(r, g, b int32) {
 	s.bg = NewRGBColor(r, g, b)
 }
+
+
 
 
 // Foreground returns a new style based on s, with the foreground color set
